@@ -181,8 +181,8 @@ Recomendación: Utiliza un entorno virtual para evitar conflictos entre versione
 Sigue estos pasos para ejecutar cada caso de forma independiente:
 
   1. Clonar el repositorio y preparar el entorno:
-       git clone <URL_DEL_REPOSITORIO>
-       cd <NOMBRE_DEL_REPO>
+       git clone https://github.com/abjosueab/Clustering-jerarquico-PCA-y-NFM.git
+       cd Clustering-jerarquico-PCA-y-NFM
        pip install -r caso1_clustering/requirements.txt
 
   2. Ejecutar Caso 1 (Clustering Jerárquico):
@@ -242,5 +242,14 @@ Sigue estos pasos para ejecutar cada caso de forma independiente:
 8. LICENCIA
 ==========================================================================================
 
-  Este proyecto está bajo la Licencia de MIT con proyeccion de Josue...
+  Copyright (c) 2026 Josue Sucasaire
+
+  Este proyecto está bajo la Licencia MIT. 
+  Esto significa que puedes usar, copiar, modificar y distribuir este software 
+  libremente, siempre que incluyas el aviso de copyright original (este mismo texto) 
+  en todas las copias o partes sustanciales del software.
+
+  Para más detalles, consulta: https://opensource.org/licenses/MIT
+  
+==========================================================================================
 ==========================================================================================
