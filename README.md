@@ -16,7 +16,7 @@ de scikit-learn:
 
 ==========================================================================================
 1. RESUMEN DE RESULTADOS CLAVE (Ejecuciones Reales)
-==========================================================================================
+========================================================================================
   CASO 1: Clustering Jerárquico + SVD
     Mejor configuración: Linkage 'average', Métrica 'coseno', SVD (200D)
     Métrica principal: ARI (Adjusted Rand Index)
