@@ -1,0 +1,50 @@
+06:59:43 | INFO    | ==============================================================================
+06:59:43 | INFO    | CLUSTERING JERARQUICO EXHAUSTIVO -- 20 NEWSGROUPS
+06:59:43 | INFO    | ==============================================================================
+06:59:43 | INFO    | Modo: COMPLETO | random_state=42
+06:59:43 | INFO    | Salida: C:\Users\HP\Downloads\TRABAJO DE MAYENKA\resultados_clustering
+06:59:43 | INFO    | Descargando/cargando 20 Newsgroups (subset='all')...
+06:59:43 | INFO    | Downloading 20news dataset. This may take a few minutes.
+06:59:43 | INFO    | Downloading dataset from https://ndownloader.figshare.com/files/5975967 (14 MB)
+07:00:43 | INFO    | Total documentos disponibles: 18846 | Categorias: 20
+07:00:43 | INFO    | Muestra estratificada final: 3000 documentos
+07:00:43 | INFO    | Distribucion por categoria: alt.atheism=150, comp.graphics=150, comp.os.ms-windows.misc=150, comp.sys.ibm.pc.hardware=150, comp.sys.mac.hardware=150, comp.windows.x=150, misc.forsale=150, rec.autos=150, rec.motorcycles=150, rec.sport.baseball=150, rec.sport.hockey=150, sci.crypt=150, sci.electronics=150, sci.med=150, sci.space=150, soc.religion.christian=150, talk.politics.guns=150, talk.politics.mideast=150, talk.politics.misc=150, talk.religion.misc=150
+07:00:43 | INFO    | Vectorizando con TF-IDF (uni+bigramas, sublinear_tf)...
+07:00:45 | INFO    | Matriz TF-IDF: 3000 docs x 10000 terminos
+07:00:45 | INFO    | SVD (LSA) a 200 componentes...
+07:00:48 | INFO    | Varianza explicada acumulada por SVD: 23.94%
+07:00:48 | INFO    | LDA a 50 topicos (puede tardar)...
+07:02:07 | INFO    | --- Representacion: SVD (LSA, 200D, estandarizado) ---
+07:02:07 | INFO    |   Calculando distancias por pares (euclidean)...
+07:02:08 | INFO    |   Calculando distancias por pares (cosine)...
+07:02:08 | INFO    |   Calculando distancias por pares (cityblock)...
+07:02:10 | INFO    |   ward     + euclidean -> ARI=0.0123 NMI=0.2167 Accuracy=0.1593 Cofenetica=0.377 (0.9s)
+07:02:11 | INFO    |   complete + euclidean -> ARI=0.0001 NMI=0.0395 Accuracy=0.0663 Cofenetica=0.551 (0.7s)
+07:02:11 | INFO    |   complete + cosine    -> ARI=0.0265 NMI=0.0914 Accuracy=0.1453 Cofenetica=0.177 (0.6s)
+07:02:13 | INFO    |   complete + cityblock -> ARI=0.0038 NMI=0.0664 Accuracy=0.0933 Cofenetica=0.458 (2.2s)
+07:02:14 | INFO    |   average  + euclidean -> ARI=0.0000 NMI=0.0233 Accuracy=0.0587 Cofenetica=0.772 (0.6s)
+07:02:15 | INFO    |   average  + cosine    -> ARI=0.1039 NMI=0.2622 Accuracy=0.2787 Cofenetica=0.446 (0.6s)
+07:02:17 | INFO    |   average  + cityblock -> ARI=0.0000 NMI=0.0205 Accuracy=0.0573 Cofenetica=0.750 (2.1s)
+07:02:17 | INFO    |   single   + euclidean -> ARI=0.0000 NMI=0.0199 Accuracy=0.0580 Cofenetica=0.743 (0.5s)
+07:02:18 | INFO    |   single   + cosine    -> ARI=0.0000 NMI=0.0163 Accuracy=0.0567 Cofenetica=0.143 (0.5s)
+07:02:20 | INFO    |   single   + cityblock -> ARI=0.0000 NMI=0.0134 Accuracy=0.0540 Cofenetica=0.731 (2.1s)
+07:02:20 | INFO    | --- Representacion: LDA (50 topicos) ---
+07:02:20 | INFO    |   Calculando distancias por pares (euclidean)...
+07:02:20 | INFO    |   Calculando distancias por pares (cosine)...
+07:02:20 | INFO    |   Calculando distancias por pares (cityblock)...
+07:02:21 | INFO    |   ward     + euclidean -> ARI=0.0431 NMI=0.1604 Accuracy=0.1377 Cofenetica=0.831 (0.6s)
+07:02:21 | INFO    |   complete + euclidean -> ARI=0.0388 NMI=0.1626 Accuracy=0.1190 Cofenetica=0.816 (0.5s)
+07:02:22 | INFO    |   complete + cosine    -> ARI=0.0336 NMI=0.1632 Accuracy=0.1097 Cofenetica=0.810 (0.5s)
+07:02:22 | INFO    |   complete + cityblock -> ARI=0.0448 NMI=0.1685 Accuracy=0.1220 Cofenetica=0.862 (0.6s)
+07:02:23 | INFO    |   average  + euclidean -> ARI=0.0351 NMI=0.1661 Accuracy=0.1123 Cofenetica=0.834 (0.5s)
+07:02:23 | INFO    |   average  + cosine    -> ARI=0.0306 NMI=0.1601 Accuracy=0.1053 Cofenetica=0.797 (0.5s)
+07:02:24 | INFO    |   average  + cityblock -> ARI=0.0333 NMI=0.1625 Accuracy=0.1077 Cofenetica=0.871 (0.7s)
+07:02:25 | INFO    |   single   + euclidean -> ARI=0.0001 NMI=0.0220 Accuracy=0.0590 Cofenetica=0.316 (0.4s)
+07:02:25 | INFO    |   single   + cosine    -> ARI=0.0001 NMI=0.0227 Accuracy=0.0590 Cofenetica=0.425 (0.4s)
+07:02:26 | INFO    |   single   + cityblock -> ARI=0.0001 NMI=0.0221 Accuracy=0.0587 Cofenetica=0.492 (0.6s)
+07:02:26 | INFO    | >>> MODELO GANADOR: average + cosine sobre SVD (LSA, 200D, estandarizado) (ARI=0.1039, Accuracy=0.2787, Cofenetica=0.446)
+07:02:26 | INFO    | Analizando numero optimo de clusters (k) sobre el modelo ganador...
+07:03:42 | INFO    | Ejecutando t-SNE (puede tardar unos minutos)...
+07:06:12 | INFO    | Tiempo total de ejecucion: 6.5 minutos
+07:06:12 | INFO    | Reporte completo guardado en: resultados_clustering\reporte_resultados.md
+07:06:12 | INFO    | Todos los resultados (CSVs, figuras, log) estan en: C:\Users\HP\Downloads\TRABAJO DE MAYENKA\resultados_clustering
