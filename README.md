@@ -1,7 +1,7 @@
-===========================================================================================
+==========================================================================================
   PORTAFOLIO DE MACHINE LEARNING: CLUSTERING JERÁRQUICO, EIGENFACES (PCA)
                  Y SISTEMAS DE RECOMENDACIÓN (NMF)
-================================================================================
+==========================================================================================
 
 Python 3.8+  |  scikit-learn 1.0+  |  Licencia MIT
 
@@ -14,10 +14,9 @@ de scikit-learn:
   2. Reconocimiento Facial mediante Eigenfaces (PCA) sobre Olivetti Faces.
   3. Sistemas de Recomendación vía Factorización de Matrices No Negativas (NMF).
 
-================================================================================
+==========================================================================================
 1. RESUMEN DE RESULTADOS CLAVE (Ejecuciones Reales)
-================================================================================
-
+==========================================================================================
   CASO 1: Clustering Jerárquico + SVD
     Mejor configuración: Linkage 'average', Métrica 'coseno', SVD (200D)
     Métrica principal: ARI (Adjusted Rand Index)
@@ -33,16 +32,16 @@ de scikit-learn:
     Métrica principal: Coherencia Temática (Caso ilustrativo)
     Resultado: Tema #10 (card, video, monitor, bus, vga)
 
-================================================================================
+==========================================================================================
 2. ESTRUCTURA DETALLADA DEL PROYECTO
-================================================================================
+==========================================================================================
 
 El proyecto está dividido en tres módulos independientes, cada uno con su
 propio pipeline de extracción, transformación, modelado y visualización.
 
---------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 2.1 Caso 1: Clustering Jerárquico sobre 20 Newsgroups
---------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 Directorio: /caso1_clustering
 
 Objetivo:
@@ -82,9 +81,9 @@ Archivos destacados:
   - /resultados_clustering/            -> Figuras, CSVs con métricas completas,
                                           log de ejecución y reporte_resultados.md.
 
---------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 2.2 Caso 2: Reconocimiento Facial con Eigenfaces (PCA) sobre Olivetti Faces
---------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 Directorio: /caso2_Olivetti
 
 Objetivo:
@@ -121,9 +120,9 @@ Archivos destacados:
   - modelo_eigenfaces_svm.joblib       -> Modelo entrenado y persistido.
   - /figuras_eigenfaces/               -> Todas las visualizaciones del análisis.
 
---------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 2.3 Caso 3: Sistema de Recomendación de Artículos con NMF y Similitud de Coseno
---------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 Directorio: /caso3_NMF
 
 Objetivo:
@@ -155,9 +154,9 @@ Archivos destacados:
   - nmf_recomendacion_mejorado.py             -> Script optimizado para generar
                                                  recomendaciones rápidas.
 
-================================================================================
+==========================================================================================
 3. REQUISITOS Y DEPENDENCIAS
-================================================================================
+==========================================================================================
 
 Este proyecto fue desarrollado con Python 3.8+. Para reproducir el entorno,
 instala las dependencias listadas en caso1_clustering/requirements.txt:
@@ -175,9 +174,9 @@ Recomendación: Utiliza un entorno virtual para evitar conflictos entre versione
   python -m venv venv
   source venv/bin/activate      # En Windows: venv\Scripts\activate
 
-================================================================================
+==========================================================================================
 4. INSTRUCCIONES DE EJECUCIÓN
-================================================================================
+==========================================================================================
 
 Sigue estos pasos para ejecutar cada caso de forma independiente:
 
@@ -203,9 +202,9 @@ Sigue estos pasos para ejecutar cada caso de forma independiente:
      Este procesará el corpus completo y dejará listo el sistema para
      recomendar artículos.
 
-================================================================================
+==========================================================================================
 5. NOTAS METODOLÓGICAS IMPORTANTES
-================================================================================
+==========================================================================================
 
   - Sin Data Leakage (Fuga de información): En todos los casos, los pasos de
     preprocesamiento (media para PCA, ajuste de TF-IDF, vectorizadores) se
@@ -218,9 +217,9 @@ Sigue estos pasos para ejecutar cada caso de forma independiente:
     el algoritmo Húngaro para evitar falsas interpretaciones de la Accuracy
     debido a etiquetas arbitrarias.
 
-================================================================================
+==========================================================================================
 6. REFERENCIAS BIBLIOGRÁFICAS
-================================================================================
+==========================================================================================
 
   - Turk, M., & Pentland, A. (1991). Eigenfaces for Recognition.
     Journal of Cognitive Neuroscience.
@@ -231,17 +230,17 @@ Sigue estos pasos para ejecutar cada caso de forma independiente:
   - Pedregosa, F. et al. (2011). Scikit-learn: Machine Learning in Python.
     JMLR.
 
-================================================================================
+==========================================================================================
 7. AUTOR
-================================================================================
+==========================================================================================
 
   Josue Sucasaire
   Estudiante de Ingeniería de Sistemas
   GitHub: https://github.com/abjosueab/Clustering-jerarquico-PCA-y-NFM.git  
 
-================================================================================
+==========================================================================================
 8. LICENCIA
-================================================================================
+==========================================================================================
 
   Este proyecto está bajo la Licencia de MIT con proyeccion de Josue...
-================================================================================
+==========================================================================================
